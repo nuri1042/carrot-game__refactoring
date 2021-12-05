@@ -14,7 +14,7 @@ Builder Pattern 은 디자인 패턴 중 하나로 복합 객체의 생성 과�
 * Design Pattern 사용 전  
 
     클래스 생성
-    ```
+    ```javascript
     class Game{
     constructor(gameDuration, carrotCount, bugCount){
       this.gameDuration = gameDuration;
@@ -25,7 +25,7 @@ Builder Pattern 은 디자인 패턴 중 하나로 복합 객체의 생성 과�
     ```
 
     클래스 메서드 사용
-    ```
+    ```javascript
     const game = new Game(3,2,2);
     ```
     생성자에 이름 입력 없이 사용하면 가독성이 떨어지고 실수하기 쉽다.
@@ -34,7 +34,7 @@ Builder Pattern 은 디자인 패턴 중 하나로 복합 객체의 생성 과�
 * Design Pattern 사용 후 
 
     클래스 생성
-    ```
+    ```javascript
     export default class GameBuilder{
       gameDuration(duration){
         this.gameDuration = gameDuration;
@@ -60,7 +60,7 @@ Builder Pattern 은 디자인 패턴 중 하나로 복합 객체의 생성 과�
     ```
 
     클래스 메서드 사용
-    ```
+    ```javascript
     const game = newGameBuilder()
       .gameDuration(5)
       .carrotCount(3)
